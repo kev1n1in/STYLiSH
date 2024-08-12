@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STYLiSH</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <logo><img id="logo" src="images/logo.png" alt="web_logo" /></logo>
+      <div class="categories__gap"></div>
+      <ul class="categories categories__desktop">
+        <li class="category">
+          <a href="" class="women category--coffee">女裝</a>
+        </li>
+        <div class="border--gray"></div>
+        <li class="category">
+          <a href="" class="men category--coffee">男裝</a>
+        </li>
+        <div class="border--gray"></div>
+        <li class="category">
+          <a href="" class="accessories category--coffee">配件</a>
+        </li>
+      </ul>
+      <div class="nav_right">
+        <div class="search">
+          <input class="search__input" type="text" placeholder="西裝" />
+          <img class="search_img" src="images/search.png" alt="" />
+        </div>
+        <div class="utility--desktop">
+          <div class="cart">
+            <a href="/checkout"
+              ><img class="cart__img" src="images/cart.png" alt=""
+            /></a>
+            <div class="circle circle--desktop"></div>
+          </div>
+          <img class="member" src="images/member.png" alt="" />
+        </div>
+      </div>
+      <img class="search__img--hide" src="images/search.png" alt="" />
+    </header>
+    <!-- mobile header -->
+    <div class="categories--dark hide">
+      <ul class="categories__mobile">
+        <li class="category category__mobile">
+          <a href="" class="women--mobile category--white">女裝</a>
+        </li>
+        <div class="border-mobile--gray"></div>
+        <li class="category category__mobile">
+          <a href="" class="men--mobile category--white">男裝</a>
+        </li>
+        <div class="border-mobile--gray"></div>
+        <li class="category category__mobile">
+          <a href="" class="accessories--mobile category--white">配件</a>
+        </li>
+      </ul>
+    </div>
+    <!-- main -->
+    <main>
+      <div class="carousel"></div>
+      <div class="carousel__dots"></div>
+      <section class="products"></section>
+      <div class="loading">
+        <img src="images/loading.gif" alt="Loading..." class="loading__img" />
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer--desktop">
+        <ul class="links">
+          <li class="link">關於 STYLiSH</li>
+          <li class="link">服務條款</li>
+          <li class="link">隱私政策</li>
+          <li class="link">聯絡我們</li>
+          <li class="link link__last">FAQ</li>
+        </ul>
+        <div class="links__gap"></div>
+        <div class="icons_rights">
+          <div class="icons desktop_icons">
+            <img class="icons_img desktop_icon" src="images/line.png" alt="" />
+            <img
+              class="icons_img desktop_icon"
+              src="images/twitter.png"
+              alt=""
+            />
+            <img
+              class="icons_img desktop_icon"
+              src="images/facebook.png"
+              alt=""
+            />
+          </div>
+          <div class="icons__gap"></div>
+          <div class="rights desktop__rights">
+            <p>© 2018. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer--mobile hide">
+        <div class="links-wrapper--mobile">
+          <ul class="links--mobile links">
+            <li class="link--mobile link">關於 STYLiSH</li>
+            <li class="link--mobile link">服務條款</li>
+            <li class="link--mobile link">隱私政策</li>
+          </ul>
+          <div class="links-gap--mobile"></div>
+          <ul class="links--mobile links">
+            <li class="link--mobile link">聯絡我們</li>
+            <li class="link--mobile link">FAQ</li>
+          </ul>
+        </div>
+        <div class="icons icons--mobile">
+          <img class="icons_img" src="images/line.png" alt="" />
+          <img class="icons_img" src="images/twitter.png" alt="" />
+          <img class="icons_img" src="images/facebook.png" alt="" />
+        </div>
+        <div class="rights rights--mobile">
+          <p>©2018.All rights reserved.</p>
+        </div>
+      </div>
+      <div class="utility--mobile hide">
+        <div class="cart--mobile">
+          <a href="/checkout"></a>
+            <div class="cart--mobile-wrapper">
+              <img
+                class="cart-img--mobile"
+                src="images/cart-mobile.png"
+                alt=""
+              />
+              <div class="circle circle--mobile"></div>
+            </div></a
+          >
+          <p>購物車</p>
+        </div>
+        <div class="border--white"></div>
+        <div class="member--mobile">
+          <img
+            class="member-img--mobile"
+            src="images/member-mobile.png"
+            alt=""
+          />
+          <p>會員</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="./api.js"></script>
+</html>
